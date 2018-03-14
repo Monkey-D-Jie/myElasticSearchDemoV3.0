@@ -1,0 +1,11 @@
+1.https://www.cnblogs.com/dennisit/archive/2013/04/08/3008631.html
+2.private Client client;Client创建方法变更
+来自http://blog.csdn.net/u011404265/article/details/51322012
+3.测试结果：没能跑出来，报了个 【没有节点存在】的异常。
+也不知道该从哪里下手。现在换个方向--》从入门教程来整，等熟悉后再来看这个demo。
+/**
+* @author: wjie
+* @date: 2018/3/14 0014 09:32
+*/
+新增：模糊类查询
+来自：http://blog.csdn.net/tianyaleixiaowu/article/details/77965257

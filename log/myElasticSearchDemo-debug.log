@@ -1,0 +1,432 @@
+2018-03-13 16:48:38.909 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [force_merge], size [1], queue size [unbounded]
+2018-03-13 16:48:38.911 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [fetch_shard_started], core [1], max [8], keep alive [5m]
+2018-03-13 16:48:38.912 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [listener], size [2], queue size [unbounded]
+2018-03-13 16:48:38.916 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [index], size [4], queue size [200]
+2018-03-13 16:48:38.916 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [refresh], core [1], max [2], keep alive [5m]
+2018-03-13 16:48:38.917 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [generic], core [4], max [128], keep alive [30s]
+2018-03-13 16:48:38.917 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [warmer], core [1], max [2], keep alive [5m]
+2018-03-13 16:48:38.918 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [search], size [7], queue size [1k]
+2018-03-13 16:48:38.918 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [flush], core [1], max [2], keep alive [5m]
+2018-03-13 16:48:38.919 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [fetch_shard_store], core [1], max [8], keep alive [5m]
+2018-03-13 16:48:38.919 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [management], core [1], max [5], keep alive [5m]
+2018-03-13 16:48:38.920 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [get], size [4], queue size [1k]
+2018-03-13 16:48:38.921 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [bulk], size [4], queue size [200]
+2018-03-13 16:48:38.921 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [snapshot], core [1], max [2], keep alive [5m]
+2018-03-13 16:48:39.410 DEBUG org.elasticsearch.common.network.IfConfig 107 doLogging -- configuration:
+
+lo
+        Software Loopback Interface 1
+        inet 127.0.0.1 netmask:255.0.0.0 broadcast:127.255.255.255 scope:host
+        inet6 ::1 prefixlen:128 scope:host
+        UP MULTICAST LOOPBACK mtu:-1 index:1
+
+net0
+        WAN Miniport (SSTP)
+        MULTICAST mtu:-1 index:2
+
+net1
+        WAN Miniport (L2TP)
+        MULTICAST mtu:-1 index:3
+
+net2
+        WAN Miniport (PPTP)
+        MULTICAST mtu:-1 index:4
+
+ppp0
+        WAN Miniport (PPPOE)
+        MULTICAST mtu:-1 index:5
+
+eth0
+        WAN Miniport (IPv6)
+        MULTICAST mtu:-1 index:6
+
+eth1
+        WAN Miniport (Network Monitor)
+        MULTICAST mtu:-1 index:7
+
+eth2
+        WAN Miniport (IP)
+        MULTICAST mtu:-1 index:8
+
+ppp1
+        RAS Async Adapter
+        MULTICAST mtu:-1 index:9
+
+net3
+        WAN Miniport (IKEv2)
+        MULTICAST mtu:-1 index:10
+
+eth3
+        Realtek PCIe GBE Family Controller
+        inet 192.168.51.13 netmask:255.255.255.0 broadcast:192.168.51.255 scope:site
+        inet6 fe80::8528:1eb4:3d7e:6c2b prefixlen:64 scope:link
+        hardware 40:8D:5C:90:49:FA
+        UP MULTICAST mtu:1500 index:11
+
+wlan0
+        802.11n USB Wireless LAN Card
+        inet 172.30.58.1 netmask:255.255.0.0 broadcast:172.30.255.255 scope:site
+        inet6 fe80::4845:50c3:c350:43cb prefixlen:64 scope:link
+        hardware B0:D5:9D:A5:4B:0B
+        UP MULTICAST mtu:1500 index:12
+
+wlan1
+        Xiaomi 802.11n USB Wireless Adapter
+        MULTICAST mtu:-1 index:13
+
+eth4
+        VirtualBox Host-Only Ethernet Adapter
+        inet 192.168.56.1 netmask:255.255.255.0 broadcast:192.168.56.255 scope:site
+        inet6 fe80::ad15:4bcb:d8e3:cd62 prefixlen:64 scope:link
+        hardware 0A:00:27:00:00:0E
+        UP MULTICAST mtu:1500 index:14
+
+eth5
+        VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:15
+
+eth6
+        Realtek PCIe GBE Family Controller-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:16
+
+eth7
+        Realtek PCIe GBE Family Controller-WFP LightWeight Filter-0000
+        MULTICAST mtu:-1 index:17
+
+eth8
+        WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:18
+
+eth9
+        WAN Miniport (IP)-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:19
+
+eth10
+        WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:20
+
+eth11
+        VirtualBox Host-Only Ethernet Adapter-WFP LightWeight Filter-0000
+        MULTICAST mtu:-1 index:21
+
+wlan2
+        802.11n USB Wireless LAN Card-VirtualBox NDIS Light-Weight Filter-0000
+        MULTICAST mtu:-1 index:22
+
+wlan3
+        802.11n USB Wireless LAN Card-Virtual WiFi Filter Driver-0000
+        MULTICAST mtu:-1 index:23
+
+wlan4
+        802.11n USB Wireless LAN Card-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:24
+
+wlan5
+        802.11n USB Wireless LAN Card-Native WiFi Filter Driver-0000
+        MULTICAST mtu:-1 index:25
+
+wlan6
+        802.11n USB Wireless LAN Card-WFP LightWeight Filter-0000
+        MULTICAST mtu:-1 index:26
+
+eth12
+        Realtek PCIe GBE Family Controller-VirtualBox NDIS Light-Weight Filter-0000
+        MULTICAST mtu:-1 index:27
+
+2018-03-13 16:48:41.943 DEBUG org.elasticsearch.client.transport.TransportClientNodesService 136 <init> -- node_sampler_interval[5s]
+2018-03-13 16:48:41.978 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.eventLoopThreads: 8
+2018-03-13 16:48:41.994 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.noUnsafe: true
+2018-03-13 16:48:41.994 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- sun.misc.Unsafe: unavailable (io.netty.noUnsafe)
+2018-03-13 16:48:41.995 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2018-03-13 16:48:41.995 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- Platform: Windows
+2018-03-13 16:48:41.995 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- Java version: 8
+2018-03-13 16:48:41.996 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.tmpdir: C:\Users\ADMINI~1\AppData\Local\Temp (java.io.tmpdir)
+2018-03-13 16:48:41.996 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-03-13 16:48:41.997 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.noPreferDirect: true
+2018-03-13 16:48:41.997 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.maxDirectMemory: -1 bytes
+2018-03-13 16:48:41.998 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-03-13 16:48:42.011 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.noKeySetOptimization: true
+2018-03-13 16:48:42.012 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-03-13 16:48:42.012 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- org.jctools-core.MpscChunkedArrayQueue: unavailable
+2018-03-13 16:48:42.469 DEBUG org.elasticsearch.client.transport.TransportClientNodesService 194 addTransportAddresses -- adding address [{#transport#-1}{nwur7PzSSCCoxuFfHytiOQ}{192.168.51.13}{192.168.51.13:9300}]
+2018-03-13 16:48:42.498 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.processId: 11812 (auto-detected)
+2018-03-13 16:48:42.501 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Djava.net.preferIPv4Stack: false
+2018-03-13 16:48:42.501 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Djava.net.preferIPv6Addresses: false
+2018-03-13 16:48:42.568 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 89 debug -- Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-03-13 16:48:42.569 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug -- Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-03-13 16:48:42.642 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.machineId: 40:8d:5c:ff:fe:90:49:fa (auto-detected)
+2018-03-13 16:48:42.653 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug -- -Dio.netty.leakDetection.level: simple
+2018-03-13 16:48:42.654 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug -- -Dio.netty.leakDetection.maxRecords: 4
+2018-03-13 16:48:42.670 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.numHeapArenas: 8
+2018-03-13 16:48:42.670 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.numDirectArenas: 8
+2018-03-13 16:48:42.670 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.pageSize: 8192
+2018-03-13 16:48:42.670 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.maxOrder: 11
+2018-03-13 16:48:42.671 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.chunkSize: 16777216
+2018-03-13 16:48:42.671 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.tinyCacheSize: 512
+2018-03-13 16:48:42.671 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.smallCacheSize: 256
+2018-03-13 16:48:42.671 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.normalCacheSize: 64
+2018-03-13 16:48:42.672 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-03-13 16:48:42.672 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-03-13 16:48:42.672 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.useCacheForAllThreads: true
+2018-03-13 16:48:42.679 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.type: pooled
+2018-03-13 16:48:42.679 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.threadLocalDirectBufferSize: 65536
+2018-03-13 16:48:42.679 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-03-13 16:48:42.710 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug -- -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-03-13 16:48:42.712 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4bac2b81
+2018-03-13 16:48:42.717 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- -Dio.netty.recycler.maxCapacityPerThread: disabled
+2018-03-13 16:48:42.717 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- -Dio.netty.recycler.maxSharedCapacityFactor: disabled
+2018-03-13 16:48:42.717 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- -Dio.netty.recycler.linkCapacity: disabled
+2018-03-13 16:48:42.717 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- -Dio.netty.recycler.ratio: disabled
+2018-03-13 16:48:42.931 DEBUG org.elasticsearch.client.transport.TransportClientNodesService$SniffNodesSampler$1 484 onFailure -- failed to connect to node [{#transport#-1}{nwur7PzSSCCoxuFfHytiOQ}{192.168.51.13}{192.168.51.13:9300}], ignoring... org.elasticsearch.transport.ConnectTransportException: [][192.168.51.13:9300] general node connection failure
+	at org.elasticsearch.transport.TcpTransport.openConnection(TcpTransport.java:570) ~[elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.transport.TcpTransport.openConnection(TcpTransport.java:116) ~[elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.transport.TransportService.openConnection(TransportService.java:351) ~[elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.client.transport.TransportClientNodesService$SniffNodesSampler$1.doRun(TransportClientNodesService.java:506) [elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.5.0.jar:5.5.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_111]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_111]
+Caused by: java.lang.IllegalStateException: handshake failed
+	at org.elasticsearch.transport.TcpTransport.executeHandshake(TcpTransport.java:1624) ~[elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.transport.TcpTransport.openConnection(TcpTransport.java:555) ~[elasticsearch-5.5.0.jar:5.5.0]
+	... 8 more
+Caused by: org.elasticsearch.transport.TransportException: connection reset
+	at org.elasticsearch.transport.TcpTransport.onChannelClosed(TcpTransport.java:1666) ~[elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.transport.TcpTransport.lambda$openConnection$1(TcpTransport.java:539) ~[elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.transport.netty4.Netty4Transport.lambda$connectToChannels$2(Netty4Transport.java:354) ~[transport-netty4-client-5.5.0.jar:5.5.0]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:507) ~[netty-common-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:481) ~[netty-common-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:420) ~[netty-common-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104) ~[netty-common-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:82) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1058) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:686) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:664) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:607) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:85) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:142) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-common-4.1.11.Final.jar:4.1.11.Final]
+	... 1 more
+
+2018-03-13 16:48:43.724 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug -- Freed 1 thread-local buffer(s) from thread: threadDeathWatcher-2-1
+2018-03-13 16:48:59.669 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [force_merge], size [1], queue size [unbounded]
+2018-03-13 16:48:59.670 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [fetch_shard_started], core [1], max [8], keep alive [5m]
+2018-03-13 16:48:59.671 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [listener], size [2], queue size [unbounded]
+2018-03-13 16:48:59.673 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [index], size [4], queue size [200]
+2018-03-13 16:48:59.674 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [refresh], core [1], max [2], keep alive [5m]
+2018-03-13 16:48:59.674 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [generic], core [4], max [128], keep alive [30s]
+2018-03-13 16:48:59.675 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [warmer], core [1], max [2], keep alive [5m]
+2018-03-13 16:48:59.675 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [search], size [7], queue size [1k]
+2018-03-13 16:48:59.675 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [flush], core [1], max [2], keep alive [5m]
+2018-03-13 16:48:59.676 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [fetch_shard_store], core [1], max [8], keep alive [5m]
+2018-03-13 16:48:59.676 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [management], core [1], max [5], keep alive [5m]
+2018-03-13 16:48:59.677 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [get], size [4], queue size [1k]
+2018-03-13 16:48:59.677 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [bulk], size [4], queue size [200]
+2018-03-13 16:48:59.677 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> -- created thread pool: name [snapshot], core [1], max [2], keep alive [5m]
+2018-03-13 16:49:00.152 DEBUG org.elasticsearch.common.network.IfConfig 107 doLogging -- configuration:
+
+lo
+        Software Loopback Interface 1
+        inet 127.0.0.1 netmask:255.0.0.0 broadcast:127.255.255.255 scope:host
+        inet6 ::1 prefixlen:128 scope:host
+        UP MULTICAST LOOPBACK mtu:-1 index:1
+
+net0
+        WAN Miniport (SSTP)
+        MULTICAST mtu:-1 index:2
+
+net1
+        WAN Miniport (L2TP)
+        MULTICAST mtu:-1 index:3
+
+net2
+        WAN Miniport (PPTP)
+        MULTICAST mtu:-1 index:4
+
+ppp0
+        WAN Miniport (PPPOE)
+        MULTICAST mtu:-1 index:5
+
+eth0
+        WAN Miniport (IPv6)
+        MULTICAST mtu:-1 index:6
+
+eth1
+        WAN Miniport (Network Monitor)
+        MULTICAST mtu:-1 index:7
+
+eth2
+        WAN Miniport (IP)
+        MULTICAST mtu:-1 index:8
+
+ppp1
+        RAS Async Adapter
+        MULTICAST mtu:-1 index:9
+
+net3
+        WAN Miniport (IKEv2)
+        MULTICAST mtu:-1 index:10
+
+eth3
+        Realtek PCIe GBE Family Controller
+        inet 192.168.51.13 netmask:255.255.255.0 broadcast:192.168.51.255 scope:site
+        inet6 fe80::8528:1eb4:3d7e:6c2b prefixlen:64 scope:link
+        hardware 40:8D:5C:90:49:FA
+        UP MULTICAST mtu:1500 index:11
+
+wlan0
+        802.11n USB Wireless LAN Card
+        inet 172.30.58.1 netmask:255.255.0.0 broadcast:172.30.255.255 scope:site
+        inet6 fe80::4845:50c3:c350:43cb prefixlen:64 scope:link
+        hardware B0:D5:9D:A5:4B:0B
+        UP MULTICAST mtu:1500 index:12
+
+wlan1
+        Xiaomi 802.11n USB Wireless Adapter
+        MULTICAST mtu:-1 index:13
+
+eth4
+        VirtualBox Host-Only Ethernet Adapter
+        inet 192.168.56.1 netmask:255.255.255.0 broadcast:192.168.56.255 scope:site
+        inet6 fe80::ad15:4bcb:d8e3:cd62 prefixlen:64 scope:link
+        hardware 0A:00:27:00:00:0E
+        UP MULTICAST mtu:1500 index:14
+
+eth5
+        VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:15
+
+eth6
+        Realtek PCIe GBE Family Controller-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:16
+
+eth7
+        Realtek PCIe GBE Family Controller-WFP LightWeight Filter-0000
+        MULTICAST mtu:-1 index:17
+
+eth8
+        WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:18
+
+eth9
+        WAN Miniport (IP)-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:19
+
+eth10
+        WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:20
+
+eth11
+        VirtualBox Host-Only Ethernet Adapter-WFP LightWeight Filter-0000
+        MULTICAST mtu:-1 index:21
+
+wlan2
+        802.11n USB Wireless LAN Card-VirtualBox NDIS Light-Weight Filter-0000
+        MULTICAST mtu:-1 index:22
+
+wlan3
+        802.11n USB Wireless LAN Card-Virtual WiFi Filter Driver-0000
+        MULTICAST mtu:-1 index:23
+
+wlan4
+        802.11n USB Wireless LAN Card-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:24
+
+wlan5
+        802.11n USB Wireless LAN Card-Native WiFi Filter Driver-0000
+        MULTICAST mtu:-1 index:25
+
+wlan6
+        802.11n USB Wireless LAN Card-WFP LightWeight Filter-0000
+        MULTICAST mtu:-1 index:26
+
+eth12
+        Realtek PCIe GBE Family Controller-VirtualBox NDIS Light-Weight Filter-0000
+        MULTICAST mtu:-1 index:27
+
+2018-03-13 16:49:00.864 DEBUG org.elasticsearch.client.transport.TransportClientNodesService 136 <init> -- node_sampler_interval[5s]
+2018-03-13 16:49:00.883 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.eventLoopThreads: 8
+2018-03-13 16:49:00.900 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.noUnsafe: true
+2018-03-13 16:49:00.900 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- sun.misc.Unsafe: unavailable (io.netty.noUnsafe)
+2018-03-13 16:49:00.901 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2018-03-13 16:49:00.901 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- Platform: Windows
+2018-03-13 16:49:00.902 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- Java version: 8
+2018-03-13 16:49:00.902 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.tmpdir: C:\Users\ADMINI~1\AppData\Local\Temp (java.io.tmpdir)
+2018-03-13 16:49:00.903 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-03-13 16:49:00.904 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.noPreferDirect: true
+2018-03-13 16:49:00.904 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.maxDirectMemory: -1 bytes
+2018-03-13 16:49:00.904 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-03-13 16:49:00.918 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.noKeySetOptimization: true
+2018-03-13 16:49:00.918 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-03-13 16:49:00.920 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- org.jctools-core.MpscChunkedArrayQueue: unavailable
+2018-03-13 16:49:01.267 DEBUG org.elasticsearch.client.transport.TransportClientNodesService 194 addTransportAddresses -- adding address [{#transport#-1}{OHdyK9IGRkK2_pazaAyoZA}{192.168.51.13}{192.168.51.13:9300}]
+2018-03-13 16:49:01.281 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.processId: 11480 (auto-detected)
+2018-03-13 16:49:01.283 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Djava.net.preferIPv4Stack: false
+2018-03-13 16:49:01.283 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Djava.net.preferIPv6Addresses: false
+2018-03-13 16:49:01.349 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 89 debug -- Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-03-13 16:49:01.350 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug -- Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2018-03-13 16:49:01.424 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.machineId: 40:8d:5c:ff:fe:90:49:fa (auto-detected)
+2018-03-13 16:49:01.435 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug -- -Dio.netty.leakDetection.level: simple
+2018-03-13 16:49:01.435 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug -- -Dio.netty.leakDetection.maxRecords: 4
+2018-03-13 16:49:01.451 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.numHeapArenas: 8
+2018-03-13 16:49:01.451 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.numDirectArenas: 8
+2018-03-13 16:49:01.451 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.pageSize: 8192
+2018-03-13 16:49:01.452 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.maxOrder: 11
+2018-03-13 16:49:01.452 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.chunkSize: 16777216
+2018-03-13 16:49:01.452 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.tinyCacheSize: 512
+2018-03-13 16:49:01.452 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.smallCacheSize: 256
+2018-03-13 16:49:01.452 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.normalCacheSize: 64
+2018-03-13 16:49:01.453 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-03-13 16:49:01.453 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-03-13 16:49:01.453 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.useCacheForAllThreads: true
+2018-03-13 16:49:01.460 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.allocator.type: pooled
+2018-03-13 16:49:01.460 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.threadLocalDirectBufferSize: 65536
+2018-03-13 16:49:01.460 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-03-13 16:49:01.487 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug -- -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-03-13 16:49:01.489 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug -- Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@36262881
+2018-03-13 16:49:01.494 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- -Dio.netty.recycler.maxCapacityPerThread: disabled
+2018-03-13 16:49:01.494 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- -Dio.netty.recycler.maxSharedCapacityFactor: disabled
+2018-03-13 16:49:01.494 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- -Dio.netty.recycler.linkCapacity: disabled
+2018-03-13 16:49:01.495 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug -- -Dio.netty.recycler.ratio: disabled
+2018-03-13 16:49:01.563 DEBUG org.elasticsearch.client.transport.TransportClientNodesService$SniffNodesSampler$1 484 onFailure -- failed to connect to node [{#transport#-1}{OHdyK9IGRkK2_pazaAyoZA}{192.168.51.13}{192.168.51.13:9300}], ignoring... org.elasticsearch.transport.ConnectTransportException: [][192.168.51.13:9300] general node connection failure
+	at org.elasticsearch.transport.TcpTransport.openConnection(TcpTransport.java:570) ~[elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.transport.TcpTransport.openConnection(TcpTransport.java:116) ~[elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.transport.TransportService.openConnection(TransportService.java:351) ~[elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.client.transport.TransportClientNodesService$SniffNodesSampler$1.doRun(TransportClientNodesService.java:506) [elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.5.0.jar:5.5.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_111]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_111]
+Caused by: java.lang.IllegalStateException: handshake failed
+	at org.elasticsearch.transport.TcpTransport.executeHandshake(TcpTransport.java:1624) ~[elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.transport.TcpTransport.openConnection(TcpTransport.java:555) ~[elasticsearch-5.5.0.jar:5.5.0]
+	... 8 more
+Caused by: org.elasticsearch.transport.TransportException: connection reset
+	at org.elasticsearch.transport.TcpTransport.onChannelClosed(TcpTransport.java:1666) ~[elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.transport.TcpTransport.lambda$openConnection$1(TcpTransport.java:539) ~[elasticsearch-5.5.0.jar:5.5.0]
+	at org.elasticsearch.transport.netty4.Netty4Transport.lambda$connectToChannels$2(Netty4Transport.java:354) ~[transport-netty4-client-5.5.0.jar:5.5.0]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:507) ~[netty-common-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:481) ~[netty-common-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:420) ~[netty-common-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104) ~[netty-common-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:82) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1058) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:686) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:664) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:607) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:85) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:142) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) ~[netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) ~[netty-common-4.1.11.Final.jar:4.1.11.Final]
+	... 1 more
+
+2018-03-13 16:49:02.500 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug -- Freed 1 thread-local buffer(s) from thread: threadDeathWatcher-2-1
