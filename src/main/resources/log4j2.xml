@@ -11,7 +11,8 @@
         <property name="FILE_NAME_WARN">myElasticSearchDemo-warn</property>
         <property name="FILE_NAME_ERROR">myElasticSearchDemo-error</property>
         <!--日志输出级别-->
-        <property name="LOG_LEVEL">debug</property>
+        <!--debug 打印的东西太jier繁杂了！！-->
+        <property name="LOG_LEVEL">info</property>
     </properties>
     <Appenders>
         <!--这个输出控制台的配置-->

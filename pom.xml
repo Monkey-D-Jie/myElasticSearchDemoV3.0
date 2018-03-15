@@ -9,7 +9,21 @@
   <url>http://maven.apache.org</url>
   <!--spring的版本号-->
   <properties>
-    <spring.version>4.3.7.RELEASE</spring.version>
+    <!--原来的-->
+    <!--<spring.version>4.3.7.RELEASE</spring.version>-->
+    <!--Es5.5.0 升级尝试-->
+    <spring.version>5.0.2.RELEASE</spring.version>
+    <!--
+    /**
+     * @author: wjie
+     * @date: 2018/3/15 0015 13:09
+     *
+     *在4.3.7版本下的spring，运行时报错
+     java.lang.NoSuchMethodError: org.springframework.util.Assert.isTrue(ZLjava/util/function/Supplier;)V
+      可能是版本过低了，现在尝试用更高版本的来做。
+      测试结果；用了5.x的spring包后，就没问题了
+     */
+    -->
   </properties>
 
   <dependencies>
@@ -46,20 +60,34 @@
       <scope>test</scope>
     </dependency>
     <!--commons包和elasticsearch包要对应才行，不然会报出找不到elasticTemplate的错误-->
-    <dependency>
+    <!--<dependency>
       <groupId>org.springframework.data</groupId>
       <artifactId>spring-data-commons</artifactId>
       <version>1.13.10.RELEASE</version>
-      <!--<version>2.0.5.RELEASE</version>-->
-    </dependency>
+    </dependency>-->
     <!--spring es data-->
-    <dependency>
+    <!--<dependency>
       <groupId>org.springframework.data</groupId>
       <artifactId>spring-data-elasticsearch</artifactId>
       <version>2.0.4.RELEASE</version>
-      <!--<version>3.0.5.RELEASE</version>-->
-    </dependency>
+    </dependency>-->
     <!--spring es data-->
+
+    <!--尝试修改 es改成5.5.0版本的-->
+    <!--spring-data-conmmons-->
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-commons</artifactId>
+      <version>2.0.0.RELEASE</version>
+    </dependency>
+    <!--spring-data-elasticsearch-->
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-elasticsearch</artifactId>
+      <version>3.0.0.RELEASE</version>
+    </dependency>
+    <!--尝试修改 es改成5.5.0版本的-->
+
     <!--commons包和elasticsearch包要对应才行，不然会报出找不到elasticTemplate的错误-->
     <dependency>
       <groupId>junit</groupId>
@@ -74,7 +102,9 @@
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-web</artifactId>
-      <version>2.10.0</version>
+      <!--<version>2.10.0</version>-->
+      <!--变更为es5.5.0后遇到未能找到ReflectionUtil类出的问题，这里作版本号变更尝试-->
+      <version>2.8.2</version>
     </dependency>
     <!--log4j2-->
 

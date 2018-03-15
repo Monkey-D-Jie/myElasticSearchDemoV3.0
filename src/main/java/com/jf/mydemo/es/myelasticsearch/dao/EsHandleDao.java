@@ -2,7 +2,7 @@ package com.jf.mydemo.es.myelasticsearch.dao;
 
 import com.jf.mydemo.es.myelasticsearch.entity.Post;
 import com.jf.mydemo.es.myelasticsearch.interfaces.IEsHandleInterfaces;
-import org.elasticsearch.index.query.MatchQueryBuilder;
+import org.elasticsearch.index.query.Operator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -62,6 +62,7 @@ public class EsHandleDao implements IEsHandleInterfaces{
             }
         }
         elasticsearchTemplate.bulkIndex(inserts);
+        System.out.println("初始化数据执行成功----测试数据已加入！");
     }
 
     @Override
@@ -115,14 +116,19 @@ public class EsHandleDao implements IEsHandleInterfaces{
 
     @Override
     public List<Post> queryContain(String title) {
-        SearchQuery searchQuery = new NativeSearchQueryBuilder().withQuery(matchQuery("title", title).operator(MatchQueryBuilder.Operator.AND)).build();
+        /*对应的是 es2.4.0*/
+        //SearchQuery searchQuery = new NativeSearchQueryBuilder().withQuery(matchQuery("title", title).operator(MatchQueryBuilder.Operator.AND)).build();
+        /*对应到 es5.5.0*/
+        SearchQuery searchQuery = new NativeSearchQueryBuilder().withQuery(matchQuery("title", title).operator(Operator.AND)).build();
         return elasticsearchTemplate.queryForList(searchQuery, Post.class);
     }
 
     @Override
     public List<Post> queryContain2(String title) {
         /*minimumShouldMatch可以用在match查询中，设置最少匹配了多少百分比的能查询出来*/
-        SearchQuery searchQuery = new NativeSearchQueryBuilder().withQuery(matchQuery("title", title).operator(MatchQueryBuilder.Operator.AND).minimumShouldMatch("50%")).build();
+//        SearchQuery searchQuery = new NativeSearchQueryBuilder().withQuery(matchQuery("title", title).operator(MatchQueryBuilder.Operator.AND).minimumShouldMatch("50%")).build();
+        /*变更同上*/
+        SearchQuery searchQuery = new NativeSearchQueryBuilder().withQuery(matchQuery("title", title).operator(Operator.AND).minimumShouldMatch("50%")).build();
         return elasticsearchTemplate.queryForList(searchQuery, Post.class);
     }
 

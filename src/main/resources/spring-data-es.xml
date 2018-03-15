@@ -10,8 +10,22 @@ http://www.springframework.org/schema/data/elasticsearch/spring-elasticsearch-1.
        <elasticsearch:repositories base-package="com.jf.mydemo.es.myelasticsearch.entity.*" />
 
 	<!-- ip:port换成具体的ip和端口，多个以逗号分隔 -->
-    <elasticsearch:transport-client id="client" cluster-nodes="192.168.51.13:9300" cluster-name="elasticsearchTest"/>
-
+    <!--对应的是es2.4.0版本-->
+    <!--<elasticsearch:transport-client id="client" cluster-nodes="192.168.51.13:9300" cluster-name="elasticsearchTest"/>-->
+    <!--修改尝试 对应的是es5.5.0版本-->
+    <elasticsearch:transport-client id="client" cluster-nodes="127.0.0.1:9300" cluster-name="my-esLearn"/>
+    <!--
+    修改后的测试记录:
+     /**
+         * @author: wjie
+         * @date: 2018/3/15 0015 11:16
+         *  ①：运行测试类中初始化数据的方法
+         *  报错 Caused by: java.lang.ClassNotFoundException: org.apache.logging.log4j.util.ReflectionUtil
+            定位:log4j2版本的问题
+            解决方案：调整log4j的jar包版本
+            2.9.0
+         */
+    -->
 
     <bean name="elasticsearchTemplate"
           class="org.springframework.data.elasticsearch.core.ElasticsearchTemplate">

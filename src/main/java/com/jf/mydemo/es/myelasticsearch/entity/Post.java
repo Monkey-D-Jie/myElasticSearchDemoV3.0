@@ -25,9 +25,12 @@ public class Post {
     private int userId;
     @Field(type = FieldType.Integer)
     private int weight;
-    @Field(type = FieldType.String)
+//    @Field(type = FieldType.String)
+//    spring-data-commons 2.x后成了text，下同
+    @Field(type = FieldType.text)
     private String title;
-    @Field(type = FieldType.String)
+//    @Field(type = FieldType.String)
+    @Field(type = FieldType.text)
     private String content;
 
     public String getId() {
