@@ -59,6 +59,7 @@ public class InitTest {
         postList.add(post);
         postList.add(post1);
         this.esHandleDao.addOrUpdatePost(postList);
+        System.out.println("初始化数据完成！！");
     }
 
     @Test
