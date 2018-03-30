@@ -1,0 +1,4 @@
+test_db-master是从gitHub上下载的演示用的数据库。
+我这里用到的是employees。总计数据量为30W左右。
+你可以根据自己的需求来选择不同的测试数据库。
+具体的加载方式请看test_db-master目录下的README.md文件。

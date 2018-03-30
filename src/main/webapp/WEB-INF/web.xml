@@ -77,9 +77,9 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID">
 
   <!--启动成功页面-->
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <!--<welcome-file>index.jsp</welcome-file>-->
+    <welcome-file>home.jsp</welcome-file>
   </welcome-file-list>
-  
   <!--启动成功页面-->
 
   <!--访问不到页面的统一处理-->

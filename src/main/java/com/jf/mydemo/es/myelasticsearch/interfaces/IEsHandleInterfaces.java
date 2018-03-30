@@ -1,6 +1,6 @@
 package com.jf.mydemo.es.myelasticsearch.interfaces;
 
-import com.jf.mydemo.es.myelasticsearch.entity.Post;
+import com.jf.mydemo.es.myelasticsearch.entities.Post;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;

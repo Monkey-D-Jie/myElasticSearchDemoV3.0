@@ -11,7 +11,10 @@
 
     <!--注解扫描目录配置-->
     <context:component-scan base-package="com.jf.mydemo.es.myelasticsearch"/>
-
+    <!--引入 mvc的配置-->
+    <import resource="spring-servlet.xml"/>
+    <!--引入myBatis的配置-->
+    <import resource="spring-dao.xml"/>
     <!-- 导入其他spring配置文件 -->
     <import resource="spring-data-es.xml"></import>
 </beans>

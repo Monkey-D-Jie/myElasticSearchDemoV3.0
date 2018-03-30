@@ -2,7 +2,7 @@ package com.jf.mydemo.es.myelasticsearch.service;
 
 import com.jf.mydemo.es.myelasticsearch.commons.RequestDataBean;
 import com.jf.mydemo.es.myelasticsearch.commons.ResponseDataBean;
-import com.jf.mydemo.es.myelasticsearch.entity.Post;
+import com.jf.mydemo.es.myelasticsearch.entities.Post;
 import com.jf.mydemo.es.myelasticsearch.interfaces.IEsHandleInterfaces;
 import com.jf.mydemo.es.myelasticsearch.interfaces.IEsServiceInterfaces;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,8 +39,8 @@ public class EsService implements IEsServiceInterfaces{
             List<Post> postList = this.esHandleDao.queryPostById(postId);
             Map<String,Object> resultMap = new HashMap<String, Object>(8);
             resultMap.put("postList",postList);
-            responseDataBean.setResData(resultMap);
-            responseDataBean.setResMsg("查询操作执行成功");
+            responseDataBean.setData(resultMap);
+            responseDataBean.setMsg("查询操作执行成功");
             responseDataBean.setResResult(success);
         }
         return responseDataBean;
@@ -57,8 +57,8 @@ public class EsService implements IEsServiceInterfaces{
             this.esHandleDao.addOrUpdatePost(postList);
             Map<String,Object> map = new HashMap<String,Object>(5);
             map.put("post",post);
-            responseDataBean.setResData(map);
-            responseDataBean.setResMsg("更新或插入操作执行成功");
+            responseDataBean.setData(map);
+            responseDataBean.setMsg("更新或插入操作执行成功");
             responseDataBean.setResResult(success);
         }
         return responseDataBean;
@@ -73,8 +73,8 @@ public class EsService implements IEsServiceInterfaces{
             String result = this.esHandleDao.deletePostById(postId);
             Map<String,Object> map = new HashMap<String,Object>(5);
             map.put("result",result);
-            responseDataBean.setResData(map);
-            responseDataBean.setResMsg("删除操作执行成功");
+            responseDataBean.setData(map);
+            responseDataBean.setMsg("删除操作执行成功");
             responseDataBean.setResResult(success);
         }
         return responseDataBean;
@@ -88,8 +88,8 @@ public class EsService implements IEsServiceInterfaces{
                 Map<String,Object> map = new HashMap<String,Object>(5);
                 map.put("result",result);
                 responseDataBean = new ResponseDataBean();
-                responseDataBean.setResData(map);
-                responseDataBean.setResMsg("---->>单字符串模糊查询，默认排序.执行成功");
+                responseDataBean.setData(map);
+                responseDataBean.setMsg("---->>单字符串模糊查询，默认排序.执行成功");
                 responseDataBean.setResResult(success);
         }
         return responseDataBean;
@@ -103,8 +103,8 @@ public class EsService implements IEsServiceInterfaces{
             Map<String,Object> map = new HashMap<String,Object>(5);
             map.put("result",result);
             responseDataBean = new ResponseDataBean();
-            responseDataBean.setResData(map);
-            responseDataBean.setResMsg("---->>单字符串模糊查询，单字段（weight权重）排序.执行成功");
+            responseDataBean.setData(map);
+            responseDataBean.setMsg("---->>单字符串模糊查询，单字段（weight权重）排序.执行成功");
             responseDataBean.setResResult(success);
         }
         return responseDataBean;
@@ -118,8 +118,8 @@ public class EsService implements IEsServiceInterfaces{
             Map<String,Object> map = new HashMap<String,Object>(5);
             map.put("result",result);
             responseDataBean = new ResponseDataBean();
-            responseDataBean.setResData(map);
-            responseDataBean.setResMsg("---->>单字段对某字符串作模糊查询.执行成功");
+            responseDataBean.setData(map);
+            responseDataBean.setMsg("---->>单字段对某字符串作模糊查询.执行成功");
             responseDataBean.setResResult(success);
         }
         return responseDataBean;
@@ -133,8 +133,8 @@ public class EsService implements IEsServiceInterfaces{
             Map<String,Object> map = new HashMap<String,Object>(5);
             map.put("result",result);
             responseDataBean = new ResponseDataBean();
-            responseDataBean.setResData(map);
-            responseDataBean.setResMsg("---->>单字段对某短语进行匹配查询.执行成功");
+            responseDataBean.setData(map);
+            responseDataBean.setMsg("---->>单字段对某短语进行匹配查询.执行成功");
             responseDataBean.setResResult(success);
         }
         return responseDataBean;
@@ -148,8 +148,8 @@ public class EsService implements IEsServiceInterfaces{
             Map<String,Object> map = new HashMap<String,Object>(5);
             map.put("result",result);
             responseDataBean = new ResponseDataBean();
-            responseDataBean.setResData(map);
-            responseDataBean.setResMsg("---->>term匹配，即不分词匹配查询.执行成功");
+            responseDataBean.setData(map);
+            responseDataBean.setMsg("---->>term匹配，即不分词匹配查询.执行成功");
             responseDataBean.setResResult(success);
         }
         return responseDataBean;
@@ -163,8 +163,8 @@ public class EsService implements IEsServiceInterfaces{
             Map<String,Object> map = new HashMap<String,Object>(5);
             map.put("result",result);
             responseDataBean = new ResponseDataBean();
-            responseDataBean.setResData(map);
-            responseDataBean.setResMsg("---->>多字段匹配 查询.执行成功");
+            responseDataBean.setData(map);
+            responseDataBean.setMsg("---->>多字段匹配 查询.执行成功");
             responseDataBean.setResResult(success);
         }
         return responseDataBean;
@@ -178,8 +178,8 @@ public class EsService implements IEsServiceInterfaces{
             Map<String,Object> map = new HashMap<String,Object>(5);
             map.put("result",result);
             responseDataBean = new ResponseDataBean();
-            responseDataBean.setResData(map);
-            responseDataBean.setResMsg("---->>单字段包含所有输入 查询.执行成功");
+            responseDataBean.setData(map);
+            responseDataBean.setMsg("---->>单字段包含所有输入 查询.执行成功");
             responseDataBean.setResResult(success);
         }
         return responseDataBean;
@@ -193,8 +193,8 @@ public class EsService implements IEsServiceInterfaces{
             Map<String,Object> map = new HashMap<String,Object>(5);
             map.put("result",result);
             responseDataBean = new ResponseDataBean();
-            responseDataBean.setResData(map);
-            responseDataBean.setResMsg("---->>单字段包含所有输入(按比例包含)查询.执行成功");
+            responseDataBean.setData(map);
+            responseDataBean.setMsg("---->>单字段包含所有输入(按比例包含)查询.执行成功");
             responseDataBean.setResResult(success);
         }
         return responseDataBean;
@@ -208,8 +208,8 @@ public class EsService implements IEsServiceInterfaces{
             Map<String,Object> map = new HashMap<String,Object>(5);
             map.put("result",result);
             responseDataBean = new ResponseDataBean();
-            responseDataBean.setResData(map);
-            responseDataBean.setResMsg("---->>合并查询.执行成功");
+            responseDataBean.setData(map);
+            responseDataBean.setMsg("---->>合并查询.执行成功");
             responseDataBean.setResResult(success);
         }
         return responseDataBean;

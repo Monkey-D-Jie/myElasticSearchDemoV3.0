@@ -1,5 +1,6 @@
 package com.jf.mydemo.es.myelasticsearch.commons;
 
+import java.io.Serializable;
 import java.util.Map;
 
 /**
@@ -11,7 +12,7 @@ import java.util.Map;
  * To change this template use File | Settings | File and Templates.
  */
 
-public class RequestDataBean {
+public class RequestDataBean implements Serializable{
 
     private String reqMsg;
     private Map reqData;

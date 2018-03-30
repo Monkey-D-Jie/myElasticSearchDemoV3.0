@@ -1,7 +1,9 @@
 package com.jf.mydemo.es.myelasticsearch.config;
 
-import com.jf.mydemo.es.myelasticsearch.entity.Post;
+import com.jf.mydemo.es.myelasticsearch.entities.Post;
 import com.jf.mydemo.es.myelasticsearch.interfaces.IEsHandleInterfaces;
+import com.jf.mydemo.es.myelasticsearch.utils.JsonXmlObjectKit;
+import com.sun.istack.internal.logging.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +29,9 @@ public class InitTest {
     private IEsHandleInterfaces esHandleDao;
     @Autowired
     private Init init;
+
+    private static Logger logger = Logger.getLogger(InitTest.class);
+
 
     @Test
     public void initData(){
@@ -64,11 +69,20 @@ public class InitTest {
 
     @Test
     public void queryPostAll(){
-        List<Post> postList = this.esHandleDao.queryPostById("!=null");
+        List<Post> postList = this.esHandleDao.queryPostById("5");
         if(!postList.isEmpty()){
             for (int i = 0; i < postList.size(); i++) {
                 System.out.println(postList.get(i).toString());
             }
         }
     }
+
+    @Test
+    public void querySingleTitleTest(){
+        String name = "浣溪沙";
+        MyPage page = new MyPage();
+        List<Post> list = this.esHandleDao.querySingleTitle(name,page);
+        this.logger.info(JsonXmlObjectKit.convertObjectJson(list));
+    }
+
 }

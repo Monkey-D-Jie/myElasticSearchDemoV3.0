@@ -1,5 +1,7 @@
 package com.jf.mydemo.es.myelasticsearch.commons;
 
+import java.io.Serializable;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -9,26 +11,28 @@ package com.jf.mydemo.es.myelasticsearch.commons;
  * To change this template use File | Settings | File and Templates.
  */
 
-public class ResponseDataBean {
+public class ResponseDataBean implements Serializable{
 
-    private String resMsg;
-    private Object resData;
+    private String msg;
+    private Object data;
     private boolean resResult;
+    private Integer count;
+    private Integer code;
 
-    public String getResMsg() {
-        return resMsg;
+    public String getMsg() {
+        return msg;
     }
 
-    public void setResMsg(String resMsg) {
-        this.resMsg = resMsg;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
-    public Object getResData() {
-        return resData;
+    public Object getData() {
+        return data;
     }
 
-    public void setResData(Object resData) {
-        this.resData = resData;
+    public void setData(Object data) {
+        this.data = data;
     }
 
     public boolean isResResult() {
@@ -39,12 +43,30 @@ public class ResponseDataBean {
         this.resResult = resResult;
     }
 
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public void setCode(Integer code) {
+        this.code = code;
+    }
+
     @Override
     public String toString() {
         return "ResponseDataBean{" +
-                "resMsg='" + resMsg + '\'' +
-                ", resData=" + resData +
+                "msg='" + msg + '\'' +
+                ", data=" + data +
                 ", resResult=" + resResult +
+                ", count=" + count +
+                ", code=" + code +
                 '}';
     }
 }

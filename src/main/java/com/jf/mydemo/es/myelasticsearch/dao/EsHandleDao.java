@@ -1,6 +1,6 @@
 package com.jf.mydemo.es.myelasticsearch.dao;
 
-import com.jf.mydemo.es.myelasticsearch.entity.Post;
+import com.jf.mydemo.es.myelasticsearch.entities.Post;
 import com.jf.mydemo.es.myelasticsearch.interfaces.IEsHandleInterfaces;
 import org.elasticsearch.index.query.Operator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -68,6 +68,12 @@ public class EsHandleDao implements IEsHandleInterfaces{
     @Override
     public String deletePostById(String postId) {
         String result = elasticsearchTemplate.delete(Post.class,postId);
+        /*QueryBuilder qb = spanFirstQuery(
+                spanTermQuery("user", "kimchy"),
+                3
+        );
+        SearchQuery searchQuery = new NativeSearchQueryBuilder().withQuery(qb).build();
+        List<Post> list = elasticsearchTemplate.queryForList(searchQuery, Post.class);*/
         return result;
     }
 

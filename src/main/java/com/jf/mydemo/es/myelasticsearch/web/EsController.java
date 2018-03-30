@@ -3,7 +3,7 @@ package com.jf.mydemo.es.myelasticsearch.web;
 import com.jf.mydemo.es.myelasticsearch.commons.RequestDataBean;
 import com.jf.mydemo.es.myelasticsearch.commons.ResponseDataBean;
 import com.jf.mydemo.es.myelasticsearch.service.EsService;
-import com.jf.mydemo.es.myelasticsearch.util.JsonXmlObjectKit;
+import com.jf.mydemo.es.myelasticsearch.utils.JsonXmlObjectKit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

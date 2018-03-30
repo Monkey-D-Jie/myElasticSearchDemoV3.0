@@ -19,11 +19,15 @@
      * @date: 2018/3/15 0015 13:09
      *
      *在4.3.7版本下的spring，运行时报错
-     java.lang.NoSuchMethodError: org.springframework.util.Assert.isTrue(ZLjava/util/function/Supplier;)V
+     java.lang.NoSuchMethodError: org.springframework.utils.Assert.isTrue(ZLjava/utils/function/Supplier;)V
       可能是版本过低了，现在尝试用更高版本的来做。
       测试结果；用了5.x的spring包后，就没问题了
      */
     -->
+
+    <!--引入taglib标签-->
+    <jstl.version>1.2</jstl.version>
+    <jsp-api.version>2.0</jsp-api.version>
   </properties>
 
   <dependencies>
@@ -108,13 +112,68 @@
     </dependency>
     <!--log4j2-->
 
+
+    <!--MyBatis start-->
+    <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.4.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+      <version>1.3.1</version>
+    </dependency>
+    <!--辅助用-->
+    <!-- https://mvnrepository.com/artifact/org.mybatis.caches/mybatis-ehcache -->
+    <dependency>
+      <groupId>org.mybatis.caches</groupId>
+      <artifactId>mybatis-ehcache</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>4.3.14.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-dbcp</groupId>
+      <artifactId>commons-dbcp</artifactId>
+      <version>1.4</version>
+    </dependency>
+    <!--辅助用-->
+    <!--MyBatis end-->
+
+    <!--JSP相关部分-->
+    <!--taglib start-->
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>${jstl.version}</version>
+    </dependency>
     <!--Servlet jar-->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>3.1.0</version>
     </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jsp-api</artifactId>
+      <version>${jsp-api.version}</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>servlet-api</artifactId>
+          <groupId>javax.servlet</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
     <!--Servlet jar-->
+    <!--taglib end-->
+
 
 
   </dependencies>

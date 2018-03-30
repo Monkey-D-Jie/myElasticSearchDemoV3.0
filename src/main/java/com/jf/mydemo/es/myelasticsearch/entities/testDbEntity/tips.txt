@@ -1,0 +1,11 @@
+1.用以存放MySQL测试数据库中对应的数据entity的目录
+来源：
+https://github.com/datacharmer/test_db
+2.这里就以employees为例。
+3.在mysql中运行sql文件的方式:
+https://www.cnblogs.com/dengyg200891/p/6022100.html
+关键内容：进入到sql文件所在的目录，
+比如我这里：F:\myIdeaWorkSpace\FROM_GitHub\MySQLTestDB\test_db-master
+然后进入到mysql中，运行 source employees.sql
+等待其加载完即可。
+
